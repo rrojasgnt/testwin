@@ -102,8 +102,8 @@ int main(int argc, char** argv) {
   // Logon MsgType.
   logon.push_back_string(hffix::tag::MsgType, "A");
 
-  logon.push_back_string(hffix::tag::SenderCompID, "AAAA");
-  logon.push_back_string(hffix::tag::TargetCompID, "BBBB");
+  logon.push_back_string(hffix::tag::SenderCompID, "YYYY");
+  logon.push_back_string(hffix::tag::TargetCompID, "NNNN");
   logon.push_back_int(hffix::tag::MsgSeqNum, seq_send++);
   // logon.push_back_timestamp(hffix::tag::SendingTime, tsend);
   logon.push_back_timestamp(hffix::tag::SendingTime, (1900 + ltm.tm_year),
@@ -127,8 +127,8 @@ int main(int argc, char** argv) {
   // New Order - Single
   new_order.push_back_string(hffix::tag::MsgType, "D");
   // Required Standard Header field.
-  new_order.push_back_string(hffix::tag::SenderCompID, "AAAA");
-  new_order.push_back_string(hffix::tag::TargetCompID, "BBBB");
+  new_order.push_back_string(hffix::tag::SenderCompID, "PPPP");
+  new_order.push_back_string(hffix::tag::TargetCompID, "XXXX");
   new_order.push_back_int(hffix::tag::MsgSeqNum, seq_send++);
   new_order.push_back_timestamp(hffix::tag::SendingTime, (1900 + ltm.tm_year),
                                 (1 + ltm.tm_mon), ltm.tm_mday, ltm.tm_hour,
