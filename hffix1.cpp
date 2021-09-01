@@ -92,6 +92,10 @@ int main(int argc, char** argv) {
   _time64(&long_time);
   _localtime64_s(&ltm, &long_time);
 
+  if (1 > 0) {
+      seq_send = 2;
+  }
+
   // ptime tsend(date(2017, 8, 9), time_duration(12, 34, 56));
 
   // We'll put a FIX Logon message in the buffer.
